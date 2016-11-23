@@ -1,0 +1,87 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="115sp">
+
+        <LinearLayout
+            android:id="@+id/main_view"
+            android:orientation="horizontal"
+            android:showDividers="beginning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+
+
+            <RelativeLayout
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="match_parent">
+
+                <TextView
+                android:id="@+id/trip_name"
+                android:gravity="start"
+                android:background="?android:attr/selectableItemBackground"
+                android:maxLines="1"
+                android:lineSpacingMultiplier="1.3"
+                android:text="Trip"
+                android:textSize="40sp"
+                android:textColor="@color/secondary_text_default_material_light"
+                android:layout_height="50sp"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true" />
+
+                <TextView
+                    android:id="@+id/trip_date"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="Date"
+                    android:textSize="20sp"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:layout_height="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/trip_time"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:lineSpacingMultiplier="1.3"
+                    android:text="Time"
+                    android:textSize="20sp"
+                    android:textColor="@color/secondary_text_default_material_light"
+                    android:layout_height="25sp"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/main_frame"
+        android:background="@drawable/divider" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/main_frame"
+        android:background="@drawable/divider" />
+
+</RelativeLayout>
+
