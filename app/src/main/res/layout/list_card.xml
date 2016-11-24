@@ -1,20 +1,14 @@
 <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <FrameLayout
-        android:id="@+id/main_frame"
-        android:layout_width="match_parent"
-        android:layout_height="80sp">
+    android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/main_view"
             android:orientation="horizontal"
             android:showDividers="beginning"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false">
+            android:layout_height="80dp">
 
 
             <RelativeLayout
@@ -68,18 +62,10 @@
 
         </LinearLayout>
 
-    </FrameLayout>
-
     <View
         android:layout_width="fill_parent"
         android:layout_height="0.5dp"
-        android:layout_below="@id/main_frame"
-        android:background="@drawable/divider" />
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="0.5dp"
-        android:layout_above="@id/main_frame"
+        android:layout_below="@id/main_view"
         android:background="@drawable/divider" />
 
 </RelativeLayout>
