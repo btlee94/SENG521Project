@@ -3,12 +3,12 @@ package com.example.seng521.seng521project;
 import android.app.Dialog;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
-import android.support.design.widget.FloatingActionButton;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -89,7 +89,7 @@ public class ActivityMain extends AppCompatActivity {
             //Get the item to be displayed
             final Trip trip = (Trip) getItem(position);
 
-            //Set onClickListener for touching an appointment card
+            //Set onClickListener for touching a trip card
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View popView) {
@@ -98,6 +98,24 @@ public class ActivityMain extends AppCompatActivity {
 
                     //this will be where a query is sent to the db for details for this particular Trip
                     //details will be shown in this popup window
+
+                    //Test data
+                    ImageView imageView1 = (ImageView) popUp.findViewById(R.id.cylMis_status);
+                    imageView1.setImageResource(R.drawable.ic_status_noerror);
+                    ImageView imageView2 = (ImageView) popUp.findViewById(R.id.fuelStat_status);
+                    imageView2.setImageResource(R.drawable.ic_status_error);
+                    ImageView imageView3 = (ImageView) popUp.findViewById(R.id.rpmLimit_status);
+                    imageView3.setImageResource(R.drawable.ic_status_error);
+                    ImageView imageView4 = (ImageView) popUp.findViewById(R.id.seatBelt_status);
+                    imageView4.setImageResource(R.drawable.ic_status_error);
+                    ImageView imageView5 = (ImageView) popUp.findViewById(R.id.brakePedal_status);
+                    imageView5.setImageResource(R.drawable.ic_status_error);
+                    ImageView imageView6 = (ImageView) popUp.findViewById(R.id.abs_status);
+                    imageView6.setImageResource(R.drawable.ic_status_error);
+                    ImageView imageView7 = (ImageView) popUp.findViewById(R.id.powerSteerFail_status);
+                    imageView7.setImageResource(R.drawable.ic_status_noerror);
+                    ImageView imageView8 = (ImageView) popUp.findViewById(R.id.heaterFail_status);
+                    imageView8.setImageResource(R.drawable.ic_status_noerror);
 
                     popUp.show();
                 }

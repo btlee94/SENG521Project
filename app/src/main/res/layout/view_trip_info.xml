@@ -23,91 +23,161 @@
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
         android:lineSpacingMultiplier="1.3"
-        android:text="Line 1"
+        android:text="@string/cylMis"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_title"/>
+
+    <ImageView
+        android:id="@+id/cylMis_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_title"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line2"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 2"
+        android:text="@string/fuelStat"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line1"/>
+
+    <ImageView
+        android:id="@+id/fuelStat_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line1"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line3"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 3"
+        android:text="@string/rpmLimit"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line2"/>
+
+    <ImageView
+        android:id="@+id/rpmLimit_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line2"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line4"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 4"
+        android:text="@string/seatBelt"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line3"/>
+
+    <ImageView
+        android:id="@+id/seatBelt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line3"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line5"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 5"
+        android:text="@string/brakePedal"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line4"/>
+
+    <ImageView
+        android:id="@+id/brakePedal_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line4"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line6"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 6"
+        android:text="@string/abs"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line5"/>
+
+    <ImageView
+        android:id="@+id/abs_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line5"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
+
     <TextView
         android:id="@+id/details_text_line7"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 7"
+        android:text="@string/powerSteerFail"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_below="@id/details_text_line6" />
+
+    <ImageView
+        android:id="@+id/powerSteerFail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line6"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:id="@+id/details_text_line8"
         android:paddingStart="@dimen/activity_vertical_margin"
         android:background="?android:attr/selectableItemBackground"
-        android:text="Line 8"
+        android:text="@string/heaterFail"
         android:textSize="21sp"
         android:textColor="@color/primary_text_default_material_light"
         android:layout_height="28sp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_below="@id/details_text_line7" />
+
+    <ImageView
+        android:id="@+id/heaterFail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_text_line7"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

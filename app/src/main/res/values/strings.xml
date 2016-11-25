@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">SENG521 Project</string>
+    <string name="app_name">Vehicle Diagnostics System</string>
+    <string name="cylMis">Cylinder Misfire:</string>
+    <string name="fuelStat">Fuel Pump Status:</string>
+    <string name="rpmLimit">Engine RPM/Speed Limit:</string>
+    <string name="seatBelt">Seat Belt Status:</string>
+    <string name="brakePedal">Brake Pedal Status:</string>
+    <string name="abs">ABS Status:</string>
+    <string name="powerSteerFail">Power Steering Failure:</string>
+    <string name="heaterFail">Heater System Failure:</string>
 </resources>
