@@ -6,10 +6,12 @@ package com.example.seng521.seng521project;
  */
 
 public class Trip {
-    //probaby a timestamp type we could use
+    //using Strings for now but could be something better later
+    //date and time basically used for better readability for the user but the full timestamps will have to be used for the database
     private String date;
     private String time;
-
+    private String timestampStart;
+    private String timestampEnd;
     private String name;
 
 /****FROM REQUIREMENTS DOC****
@@ -32,10 +34,10 @@ public class Trip {
     private boolean powerSteerFail;
     private boolean heaterFail;
 
-    public Trip(String name, String date, String time){
+    public Trip(String name, String start, String end){
         this.name = name;
-        this.date = date;
-        this.time = time;
+        this.timestampStart = start;
+        this.timestampEnd = end;
     }
 
     public String getName(){
@@ -49,4 +51,8 @@ public class Trip {
     public String getTime(){
         return this.time;
     }
+
+    public String getTimestampEnd() { return this.timestampEnd; }
+
+    public String getTimestampStart() { return this.timestampStart; }
 }

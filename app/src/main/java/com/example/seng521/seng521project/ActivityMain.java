@@ -15,12 +15,13 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ActivityMain extends AppCompatActivity {
+    private static Storage localDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        localDB = Storage.getInstance(this.getBaseContext());
         setView();
     }
 
@@ -34,12 +35,14 @@ public class ActivityMain extends AppCompatActivity {
         textTitle.setText(title);
 
         //Test data
-        ArrayList<Trip> testTrips = new ArrayList<>();
-        testTrips.add(new Trip("Trip 1", "2016-11-23", "12:00"));
-        testTrips.add(new Trip("Trip 2", "2016-11-15", "1:00"));
-        testTrips.add(new Trip("Trip 3", "2016-11-02", "2:00"));
-        testTrips.add(new Trip("Trip 4", "2016-10-27", "3:00"));
-        testTrips.add(new Trip("Trip 5", "2016-10-25", "4:00"));
+        localDB.addTrip(new Trip("Trip 1", "2016-11-23", "12:00"));
+        localDB.addTrip(new Trip("Trip 2", "2016-11-15", "1:00"));
+        localDB.addTrip(new Trip("Trip 3", "2016-11-02", "2:00"));
+        localDB.addTrip(new Trip("Trip 4", "2016-10-27", "3:00"));
+        localDB.addTrip(new Trip("Trip 5", "2016-10-25", "4:00"));
+
+        ArrayList<Trip> testTrips = localDB.getTrips();
+
 
         //Create the adapter that is responsible for displaying the content on the list
         CardListAdapter adapter = new CardListAdapter(getBaseContext(), testTrips);
@@ -126,10 +129,10 @@ public class ActivityMain extends AppCompatActivity {
             textView1.setText(trip.getName());
 
             TextView textView2 = (TextView) v.findViewById(R.id.trip_date);
-            textView2.setText(trip.getDate());
+            textView2.setText(trip.getTimestampStart());
 
             TextView textView3 = (TextView) v.findViewById(R.id.trip_time);
-            textView3.setText(trip.getTime());
+            textView3.setText(trip.getTimestampEnd());
 
             return v;
         }
