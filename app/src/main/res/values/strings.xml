@@ -8,4 +8,6 @@
     <string name="abs">ABS Status:</string>
     <string name="powerSteerFail">Power Steering Failure:</string>
     <string name="heaterFail">Heater System Failure:</string>
+    <string name="gps">Coordinates</string>
+    <string name="speed">Speed</string>
 </resources>

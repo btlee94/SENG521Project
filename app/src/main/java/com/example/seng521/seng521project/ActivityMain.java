@@ -2,6 +2,7 @@ package com.example.seng521.seng521project;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -47,6 +48,11 @@ public class ActivityMain extends AppCompatActivity {
         //Create the adapter that is responsible for displaying the content on the list
         CardListAdapter adapter = new CardListAdapter(getBaseContext(), testTrips);
         listview.setAdapter(adapter);
+    }
+
+    public void addFabOnClick(View addButton){
+        final Intent intent  = new Intent(ActivityMain.this, ActivityTrip.class);
+        startActivity(intent);
     }
 
     public class CardListAdapter extends BaseAdapter {

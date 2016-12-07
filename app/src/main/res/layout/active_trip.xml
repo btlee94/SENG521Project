@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/active_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_text_default_material_dark"
+        android:background="@color/colorPrimary"
+        android:text="Current Trip"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:text="@string/gps"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/active_title"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gps"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/coordinateX"
+            android:text="X: "
+            android:textSize="21sp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:layout_height="28sp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/coordinateY"
+            android:layout_centerHorizontal="true"
+            android:text="Y: "
+            android:textSize="21sp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:layout_height="28sp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speed_title"
+        android:text="@string/speed"
+        android:textSize="30sp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gps"
+        />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_centerHorizontal="true"
+        android:textSize="21sp"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:layout_height="28sp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/speed_title"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_action_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
