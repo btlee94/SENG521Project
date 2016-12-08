@@ -35,15 +35,14 @@ public class ActivityMain extends AppCompatActivity {
         TextView textTitle = (TextView) findViewById(R.id.list_title);
         textTitle.setText(title);
 
-        //Test data
+        /*Test data
         localDB.addTrip(new Trip("Trip 1", "2016-11-23", "12:00"));
         localDB.addTrip(new Trip("Trip 2", "2016-11-15", "1:00"));
         localDB.addTrip(new Trip("Trip 3", "2016-11-02", "2:00"));
         localDB.addTrip(new Trip("Trip 4", "2016-10-27", "3:00"));
         localDB.addTrip(new Trip("Trip 5", "2016-10-25", "4:00"));
-
+        */
         ArrayList<Trip> testTrips = localDB.getTrips();
-
 
         //Create the adapter that is responsible for displaying the content on the list
         CardListAdapter adapter = new CardListAdapter(getBaseContext(), testTrips);

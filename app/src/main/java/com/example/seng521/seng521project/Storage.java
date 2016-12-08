@@ -30,9 +30,6 @@ public class Storage {
 
     private Storage(Context context) {
         this.context = context;
-
-        //Delete old DB for testing purposes; remove for final version
-        this.context.deleteDatabase(DATABASE_NAME);
         this.dbhelper = new StorageHelper(this.context);
     }
 
